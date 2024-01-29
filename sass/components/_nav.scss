@@ -1,0 +1,179 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  li {
+    list-style: none;
+  }
+  &__left-contain {
+    display: flex;
+    column-gap: 6rem;
+    justify-self: center;
+    align-self: end;
+    justify-content: center;
+    align-items: center;
+
+    .nav__left-contain--logo {
+      display: flex;
+      column-gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0.5rem;
+    }
+    a:link,
+    a:visited {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: $color-primary-white;
+      font-weight: 700;
+    }
+    a:link:hover,
+    a:visited:hover {
+      border-bottom: 1.5px solid gray;
+    }
+
+    img[alt="company-logo"] {
+      height: 8vh;
+      padding-right: 0.8rem;
+    }
+
+    img[alt="catalog-logo"] {
+      height: 4vh;
+    }
+
+    img[alt="down-arrow"] {
+      height: 1.3rem;
+      margin-left: 1.4rem;
+    }
+  }
+
+  &-right-contain {
+    justify-self: center;
+    align-self: center;
+
+    img[alt="search-logo"] {
+      height: 4vh;
+      width: 4vw;
+    }
+    img[alt="search-logo"]:hover {
+      border-bottom: 3px solid gray;
+    }
+  }
+}
+
+@media (max-width: 1127px) {
+  .nav {
+    &__left-contain {
+      column-gap: 4rem;
+
+      .nav__left-contain--logo {
+        column-gap: 0.5rem;
+      }
+      a:link,
+      a:visited {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      img[alt="company-logo"] {
+        height: 8vh;
+        padding-right: 0.8rem;
+      }
+
+      img[alt="catalog-logo"] {
+        height: 4vh;
+      }
+
+      img[alt="down-arrow"] {
+        height: 1.2rem;
+        margin-left: 1rem;
+      }
+      img[alt="search-logo"] {
+        height: 4vh;
+      }
+    }
+
+    &-right-contain {
+      padding-right: 10rem;
+      img[alt="search-logo"] {
+        height: 4vh;
+        width: 4vw;
+      }
+      img[alt="search-logo"]:hover {
+        border-bottom: 3px solid gray;
+      }
+    }
+  }
+}
+@media (max-width: 1028px) {
+  .nav {
+    padding: 2rem;
+    &__left-contain {
+      column-gap: 2rem;
+
+      .nav__left-contain--logo {
+        column-gap: 0.5rem;
+      }
+      a:link,
+      a:visited {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      img[alt="company-logo"] {
+        height: 6vh;
+        padding-right: 0.6rem;
+      }
+
+      img[alt="catalog-logo"] {
+        height: 3vh;
+      }
+
+      img[alt="down-arrow"] {
+        height: 1rem;
+        margin-left: 1rem;
+      }
+    }
+
+    &-right-contain {
+      padding-right: 5rem;
+      img[alt="search-logo"] {
+        height: 2.5vh;
+        width: 2.5vw;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .nav {
+    &__left-contain {
+      column-gap: 1.5rem;
+      justify-self: center;
+      align-self: end;
+      .nav__left-contain--logo {
+        column-gap: 0.5rem;
+      }
+      a:link,
+      a:visited {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      .nav__left-contain--logo {
+        padding-bottom: 0.8rem;
+      }
+
+      img[alt="company-logo"] {
+        height: 4vh;
+        padding-right: 0.6rem;
+      }
+
+      img[alt="catalog-logo"] {
+        height: 2vh;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@mixin paraSmall($color) {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: $color;
+  max-width: 73rem;
+}
+
+@mixin headingSecondary($font-size) {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  color: #24272e;
+  font-size: $font-size;
+}
+
+@mixin arrowForward($color) {
+  color: $color-primary-white;
+  height: 4vh;
+}
+
+@mixin paraMedium($color, $font-size, $line-height) {
+  max-width: 35rem;
+  font-size: $font-size;
+  color: $color;
+  font-weight: 500;
+  line-height: $line-height;
+  display: inline-block;
+}
+
+@mixin flexElements {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  padding-top: 16rem;
+  justify-self: end;
+}
+
+@mixin footerHeader {
+  font-family: Inter;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+@mixin linkCollectionFooter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}

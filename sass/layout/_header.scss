@@ -1,0 +1,25 @@
+.main-header {
+  background-image: linear-gradient(#002953cc 0%, #002d5bcc 100%),
+    url("../assets/heroBackgroundImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 12% 90%;
+  height: 125vh;
+  // max-width: 100vw;
+  #resouce {
+    display: none;
+  }
+}
+
+.header__contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  h3 {
+    font-size: 6.5rem;
+    color: $color-primary-white;
+    text-align: center;
+  }
+}

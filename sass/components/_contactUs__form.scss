@@ -1,0 +1,109 @@
+.contactUs__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.5rem;
+  padding: 3.2rem;
+  justify-content: center;
+  align-items: center;
+
+  label {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #24272e;
+  }
+
+  input {
+    font-weight: 700;
+    display: flex;
+    border-radius: 8px;
+    width: 34rem;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    padding: 1.5rem;
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    font-size: 2rem;
+  }
+
+  textarea {
+    padding: 2rem;
+    height: 11.7rem;
+    border-radius: 8px;
+    width: 69rem;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    resize: none;
+    font-size: 2rem;
+
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  }
+  &-personDetail {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    column-gap: 2rem;
+  }
+  &-personEmail input {
+    width: 69rem;
+  }
+  &-personEmail,
+  &-message,
+  &-btn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+  }
+  &-btn {
+    padding-left: 20rem;
+    .submit {
+      padding: 2rem 2.5rem;
+      background-color: transparent;
+      max-width: fit-content;
+      border-radius: 4px;
+      border: 1.5px solid #1d6fa3;
+      color: #24272e;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
+@media (max-width: 610px) {
+  .contactUs__form {
+    row-gap: 2rem;
+    padding: 3.2rem;
+
+    label {
+      font-size: 1.5rem;
+    }
+
+    input {
+      width: 21rem;
+      padding: 1rem;
+    }
+
+    textarea {
+      height: 10rem;
+      width: 45rem;
+    }
+
+    &-personEmail input {
+      width: 45rem;
+    }
+    &-btn {
+      padding-left: 8rem;
+      .submit {
+        padding: 2rem 2.5rem;
+        background-color: transparent;
+        max-width: fit-content;
+        border-radius: 4px;
+        border: 1.5px solid #1d6fa3;
+        color: #24272e;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

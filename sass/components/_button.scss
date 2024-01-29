@@ -1,0 +1,68 @@
+.btn {
+  &:link,
+  &:visited {
+    color: $color-primary-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.8rem;
+    padding: 1.6rem 2.8rem;
+    color: $color-primary-white;
+    border-radius: 8px;
+    border: 1px solid #ffe500;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    text-decoration: none;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.link-btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: #1d6fa3;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.news__button {
+  text-align: center;
+  padding: 1.5rem 4rem;
+  border-radius: 0.4rem;
+  border: 1px solid #1d6fa3;
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 2.2rem;
+      font-style: normal;
+      font-weight: 700;
+      color: #24272e;
+    }
+  }
+}
+
+.resources__button {
+  text-align: center;
+  padding: 1.5rem 4rem;
+  border-radius: 0.4rem;
+  max-width: fit-content;
+  border: 1px solid #1d6fa3;
+  margin: 2.5rem auto;
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 2.2rem;
+      font-style: normal;
+      font-weight: 700;
+      color: #24272e;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.campaigns__collection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-self: center;
+  column-gap: 3rem;
+}
+.campaigns__album {
+  justify-self: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 4rem;
+
+  &-photo img {
+    width: 100%;
+  }
+
+  &-heading {
+    @include headingSecondary(1.8rem);
+  }
+
+  &-para {
+    @include paraMedium(#7c7d82, 1.6rem, 2.1rem);
+  }
+  &-info {
+    padding: 4rem;
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+  }
+  &-buttons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    row-gap: 0.4rem;
+  }
+}
+
+img[alt="arrow-forward"] {
+  height: 3.7vh;
+}
+@media (max-width: 1080px) {
+  .campaigns__collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-self: center;
+    column-gap: 4rem;
+    row-gap: 4rem;
+  }
+}
+@media (max-width: 780px) {
+  .campaigns__collection {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-self: center;
+    row-gap: 4rem;
+  }
+}
